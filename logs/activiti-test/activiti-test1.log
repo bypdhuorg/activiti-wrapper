@@ -1,0 +1,804 @@
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | 
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | 
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | 
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | 
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | 
+[2019-02-27 15:18:19]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | 
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | 
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | 
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | 
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | 
+[2019-02-27 15:21:31]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | package com.flowablewrapper.modules.base.entity;
+
+import com.flowablewrapper.base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 流程定义 业务数据
+ * @author meibo
+ */
+@Data
+@Entity
+@Table(name = "bt_bpm_definition")
+@ApiModel(value = "流程定义")
+public class BpmDefinition extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+}
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | package com.flowablewrapper.modules.base.dao;
+
+import com.flowablewrapper.base.BaseDao;
+import com.flowablewrapper.modules.base.entity.BpmDefinition;
+
+import java.util.List;
+
+/**
+ * 流程定义数据处理层
+ * @author meibo
+ */
+public interface BpmDefinitionDao extends BaseDao<BpmDefinition,String> {
+
+}
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | package com.flowablewrapper.modules.base.service;
+
+import com.flowablewrapper.base.BaseService;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.modules.base.entity.BpmDefinition;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+
+/**
+ * 流程定义接口
+ * @author meibo
+ */
+public interface BpmDefinitionService extends BaseService<BpmDefinition,String> {
+
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmDefinition
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    Page<BpmDefinition> findByCondition(BpmDefinition bpmDefinition, SearchTimeVo searchVo, Pageable pageable);
+}
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | package com.flowablewrapper.modules.base.service.impl;
+
+import cn.hutool.core.date.DateUtil;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.modules.base.dao.BpmDefinitionDao;
+import com.flowablewrapper.modules.base.entity.BpmDefinition;
+import com.flowablewrapper.modules.base.service.BpmDefinitionService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * 流程定义接口实现
+ * @author meibo
+ */
+@Slf4j
+@Service
+@Transactional
+public class BpmDefinitionServiceImpl implements BpmDefinitionService {
+
+    @Autowired
+    private BpmDefinitionDao bpmDefinitionDao;
+
+    @Override
+    public BpmDefinitionDao getRepository() {
+        return bpmDefinitionDao;
+    }
+
+    @Override
+    public void saveCheck(BpmDefinition bpmDefinition){
+       // if(getRepository().findByUserId(bpmDefinition.getUserId()) !=null){
+       //     throw new UserClientException("XXX已经存在");
+       // }
+    };
+    @Override
+    public void updateCheck(BpmDefinition bpmDefinition){};
+    @Override
+    public void deleteCheck(BpmDefinition bpmDefinition){};
+
+    @Override
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmDefinition
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    public Page<BpmDefinition> findByCondition(BpmDefinition bpmDefinition, SearchTimeVo searchVo, Pageable pageable) {
+        return getRepository().findAll(new Specification<BpmDefinition>() {
+            @Nullable
+            @Override
+            public Predicate toPredicate(Root<BpmDefinition> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+
+                Path<Date> createTimeField=root.get("createTime");
+
+                List<Predicate> list = new ArrayList<Predicate>();
+
+                //创建时间
+                if(searchVo.getStartDate()!=null){
+                    Date start = DateUtil.date(searchVo.getStartDate());
+                    list.add(cb.greaterThanOrEqualTo(createTimeField, start));
+                }
+                if(searchVo.getEndDate()!=null){
+                    Date end = DateUtil.date(searchVo.getEndDate());
+                    list.add(cb.lessThanOrEqualTo(createTimeField, end));
+                }
+
+                Predicate[] arr = new Predicate[list.size()];
+                cq.where(list.toArray(arr));
+                return null;
+            }
+        }, pageable);
+    }
+}
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | package com.flowablewrapper.modules.base.controller;
+
+import com.flowablewrapper.base.BaseController;
+import com.flowablewrapper.bean.vo.PageVo;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.common.dto.BaseDTO;
+import com.flowablewrapper.common.utils.ResultUtil;
+import com.flowablewrapper.modules.base.entity.BpmDefinition;
+import com.flowablewrapper.modules.base.service.BpmDefinitionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
+
+
+/**
+ * 流程定义Controller层
+ * @author meibo
+ */
+@Slf4j
+@RestController
+@Api(description = "流程定义管理接口")
+@RequestMapping("/bpmDefinition")
+@Transactional
+public class BpmDefinitionController extends BaseController<BpmDefinition, String>{
+
+    @Autowired
+    private BpmDefinitionService bpmDefinitionService;
+
+    @Override
+    public BpmDefinitionService getService() {
+        return bpmDefinitionService;
+    }
+
+    @RequestMapping(value = "/getByPage",method = RequestMethod.GET)
+    @ResponseBody
+    @ApiOperation(value = "分页获取")
+    public BaseDTO<Page<BpmDefinition>> getByPage(
+            @ModelAttribute BpmDefinition bpmDefinition,
+            @ModelAttribute SearchTimeVo searchVo,
+            @ModelAttribute PageVo page){
+
+        Page<BpmDefinition> data = getService().findByCondition(bpmDefinition,searchVo,initPage(page));
+        return new ResultUtil<Page<BpmDefinition>>().setData(data);
+    }
+}
+
+[2019-02-27 15:21:53]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(141)] | package com.flowablewrapper.wf-core.modules.base.entity;
+
+import com.flowablewrapper.base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 流程定义 业务数据
+ * @author meibo
+ */
+@Data
+@Entity
+@Table(name = "bt_bpm_definition")
+@ApiModel(value = "流程定义")
+public class BpmDefinition extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+}
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(159)] | package com.flowablewrapper.wf-core.modules.base.dao;
+
+import com.flowablewrapper.base.BaseDao;
+import com.flowablewrapper.wf-core.modules.base.entity.BpmDefinition;
+
+import java.util.List;
+
+/**
+ * 流程定义数据处理层
+ * @author meibo
+ */
+public interface BpmDefinitionDao extends BaseDao<BpmDefinition,String> {
+
+}
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(174)] | package com.flowablewrapper.wf-core.modules.base.service;
+
+import com.flowablewrapper.base.BaseService;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.wf-core.modules.base.entity.BpmDefinition;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+
+/**
+ * 流程定义接口
+ * @author meibo
+ */
+public interface BpmDefinitionService extends BaseService<BpmDefinition,String> {
+
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmDefinition
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    Page<BpmDefinition> findByCondition(BpmDefinition bpmDefinition, SearchTimeVo searchVo, Pageable pageable);
+}
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(189)] | package com.flowablewrapper.wf-core.modules.base.service.impl;
+
+import cn.hutool.core.date.DateUtil;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.wf-core.modules.base.dao.BpmDefinitionDao;
+import com.flowablewrapper.wf-core.modules.base.entity.BpmDefinition;
+import com.flowablewrapper.wf-core.modules.base.service.BpmDefinitionService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * 流程定义接口实现
+ * @author meibo
+ */
+@Slf4j
+@Service
+@Transactional
+public class BpmDefinitionServiceImpl implements BpmDefinitionService {
+
+    @Autowired
+    private BpmDefinitionDao bpmDefinitionDao;
+
+    @Override
+    public BpmDefinitionDao getRepository() {
+        return bpmDefinitionDao;
+    }
+
+    @Override
+    public void saveCheck(BpmDefinition bpmDefinition){
+       // if(getRepository().findByUserId(bpmDefinition.getUserId()) !=null){
+       //     throw new UserClientException("XXX已经存在");
+       // }
+    };
+    @Override
+    public void updateCheck(BpmDefinition bpmDefinition){};
+    @Override
+    public void deleteCheck(BpmDefinition bpmDefinition){};
+
+    @Override
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmDefinition
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    public Page<BpmDefinition> findByCondition(BpmDefinition bpmDefinition, SearchTimeVo searchVo, Pageable pageable) {
+        return getRepository().findAll(new Specification<BpmDefinition>() {
+            @Nullable
+            @Override
+            public Predicate toPredicate(Root<BpmDefinition> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+
+                Path<Date> createTimeField=root.get("createTime");
+
+                List<Predicate> list = new ArrayList<Predicate>();
+
+                //创建时间
+                if(searchVo.getStartDate()!=null){
+                    Date start = DateUtil.date(searchVo.getStartDate());
+                    list.add(cb.greaterThanOrEqualTo(createTimeField, start));
+                }
+                if(searchVo.getEndDate()!=null){
+                    Date end = DateUtil.date(searchVo.getEndDate());
+                    list.add(cb.lessThanOrEqualTo(createTimeField, end));
+                }
+
+                Predicate[] arr = new Predicate[list.size()];
+                cq.where(list.toArray(arr));
+                return null;
+            }
+        }, pageable);
+    }
+}
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(204)] | package com.flowablewrapper.wf-core.modules.base.controller;
+
+import com.flowablewrapper.base.BaseController;
+import com.flowablewrapper.bean.vo.PageVo;
+import com.flowablewrapper.bean.vo.SearchTimeVo;
+import com.flowablewrapper.common.dto.BaseDTO;
+import com.flowablewrapper.common.utils.ResultUtil;
+import com.flowablewrapper.wf-core.modules.base.entity.BpmDefinition;
+import com.flowablewrapper.wf-core.modules.base.service.BpmDefinitionService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
+
+
+/**
+ * 流程定义Controller层
+ * @author meibo
+ */
+@Slf4j
+@RestController
+@Api(description = "流程定义管理接口")
+@RequestMapping("/bpmDefinition")
+@Transactional
+public class BpmDefinitionController extends BaseController<BpmDefinition, String>{
+
+    @Autowired
+    private BpmDefinitionService bpmDefinitionService;
+
+    @Override
+    public BpmDefinitionService getService() {
+        return bpmDefinitionService;
+    }
+
+    @RequestMapping(value = "/getByPage",method = RequestMethod.GET)
+    @ResponseBody
+    @ApiOperation(value = "分页获取")
+    public BaseDTO<Page<BpmDefinition>> getByPage(
+            @ModelAttribute BpmDefinition bpmDefinition,
+            @ModelAttribute SearchTimeVo searchVo,
+            @ModelAttribute PageVo page){
+
+        Page<BpmDefinition> data = getService().findByCondition(bpmDefinition,searchVo,initPage(page));
+        return new ResultUtil<Page<BpmDefinition>>().setData(data);
+    }
+}
+
+[2019-02-27 15:26:00]-[main]-[INFO]-[generator.XbootGenerator-generateCode(230)] | 生成代码成功！
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | package com.wf.modules.flowable.entity;
+
+import com.wf.base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 流程定义 业务数据
+ * @author meibo
+ */
+@Data
+@Entity
+@Table(name = "bt_bpm_model")
+@ApiModel(value = "流程定义")
+public class BpmModel extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+}
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | package com.wf.modules.flowable.dao;
+
+import com.wf.base.BaseDao;
+import com.wf.modules.flowable.entity.BpmModel;
+
+import java.util.List;
+
+/**
+ * 流程定义数据处理层
+ * @author meibo
+ */
+public interface BpmModelDao extends BaseDao<BpmModel,String> {
+
+}
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | package com.wf.modules.flowable.service;
+
+import com.wf.base.BaseService;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.entity.BpmModel;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+
+/**
+ * 流程定义接口
+ * @author meibo
+ */
+public interface BpmModelService extends BaseService<BpmModel,String> {
+
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmModel
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    Page<BpmModel> findByCondition(BpmModel bpmModel, SearchTimeVo searchVo, Pageable pageable);
+}
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | package com.wf.modules.flowable.service.impl;
+
+import cn.hutool.core.date.DateUtil;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.dao.BpmModelDao;
+import com.wf.modules.flowable.entity.BpmModel;
+import com.wf.modules.flowable.service.BpmModelService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * 流程定义接口实现
+ * @author meibo
+ */
+@Slf4j
+@Service
+@Transactional
+public class BpmModelServiceImpl implements BpmModelService {
+
+    @Autowired
+    private BpmModelDao bpmModelDao;
+
+    @Override
+    public BpmModelDao getRepository() {
+        return bpmModelDao;
+    }
+
+    @Override
+    public void saveCheck(BpmModel bpmModel){
+       // if(getRepository().findByUserId(bpmModel.getUserId()) !=null){
+       //     throw new UserClientException("XXX已经存在");
+       // }
+    };
+    @Override
+    public void updateCheck(BpmModel bpmModel){};
+    @Override
+    public void deleteCheck(BpmModel bpmModel){};
+
+    @Override
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmModel
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    public Page<BpmModel> findByCondition(BpmModel bpmModel, SearchTimeVo searchVo, Pageable pageable) {
+        return getRepository().findAll(new Specification<BpmModel>() {
+            @Nullable
+            @Override
+            public Predicate toPredicate(Root<BpmModel> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+
+                Path<Date> createTimeField=root.get("createTime");
+
+                List<Predicate> list = new ArrayList<Predicate>();
+
+                //创建时间
+                if(searchVo.getStartDate()!=null){
+                    Date start = DateUtil.date(searchVo.getStartDate());
+                    list.add(cb.greaterThanOrEqualTo(createTimeField, start));
+                }
+                if(searchVo.getEndDate()!=null){
+                    Date end = DateUtil.date(searchVo.getEndDate());
+                    list.add(cb.lessThanOrEqualTo(createTimeField, end));
+                }
+
+                Predicate[] arr = new Predicate[list.size()];
+                cq.where(list.toArray(arr));
+                return null;
+            }
+        }, pageable);
+    }
+}
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | package com.wf.modules.flowable.controller;
+
+import com.wf.base.BaseController;
+import com.wf.bean.vo.PageVo;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.common.dto.BaseDTO;
+import com.wf.common.utils.ResultUtil;
+import com.wf.modules.flowable.entity.BpmModel;
+import com.wf.modules.flowable.service.BpmModelService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
+
+
+/**
+ * 流程定义Controller层
+ * @author meibo
+ */
+@Slf4j
+@RestController
+@Api(description = "流程定义管理接口")
+@RequestMapping("/bpmModel")
+@Transactional
+public class BpmModelController extends BaseController<BpmModel, String>{
+
+    @Autowired
+    private BpmModelService bpmModelService;
+
+    @Override
+    public BpmModelService getService() {
+        return bpmModelService;
+    }
+
+    @RequestMapping(value = "/getByPage",method = RequestMethod.GET)
+    @ResponseBody
+    @ApiOperation(value = "分页获取")
+    public BaseDTO<Page<BpmModel>> getByPage(
+            @ModelAttribute BpmModel bpmModel,
+            @ModelAttribute SearchTimeVo searchVo,
+            @ModelAttribute PageVo page){
+
+        Page<BpmModel> data = getService().findByCondition(bpmModel,searchVo,initPage(page));
+        return new ResultUtil<Page<BpmModel>>().setData(data);
+    }
+}
+
+[2019-02-27 15:45:45]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | package com.wf.modules.flowable.entity;
+
+import com.wf.base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 流程定义 业务数据
+ * @author meibo
+ */
+@Data
+@Entity
+@Table(name = "bt_bpm_model")
+@ApiModel(value = "流程定义")
+public class BpmModel extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+}
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | package com.wf.modules.flowable.dao;
+
+import com.wf.base.BaseDao;
+import com.wf.modules.flowable.entity.BpmModel;
+
+import java.util.List;
+
+/**
+ * 流程定义数据处理层
+ * @author meibo
+ */
+public interface BpmModelDao extends BaseDao<BpmModel,String> {
+
+}
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | package com.wf.modules.flowable.service;
+
+import com.wf.base.BaseService;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.entity.BpmModel;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+
+/**
+ * 流程定义接口
+ * @author meibo
+ */
+public interface BpmModelService extends BaseService<BpmModel,String> {
+
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmModel
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    Page<BpmModel> findByCondition(BpmModel bpmModel, SearchTimeVo searchVo, Pageable pageable);
+}
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | package com.wf.modules.flowable.service.impl;
+
+import cn.hutool.core.date.DateUtil;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.dao.BpmModelDao;
+import com.wf.modules.flowable.entity.BpmModel;
+import com.wf.modules.flowable.service.BpmModelService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * 流程定义接口实现
+ * @author meibo
+ */
+@Slf4j
+@Service
+@Transactional
+public class BpmModelServiceImpl implements BpmModelService {
+
+    @Autowired
+    private BpmModelDao bpmModelDao;
+
+    @Override
+    public BpmModelDao getRepository() {
+        return bpmModelDao;
+    }
+
+    @Override
+    public void saveCheck(BpmModel bpmModel){
+       // if(getRepository().findByUserId(bpmModel.getUserId()) !=null){
+       //     throw new UserClientException("XXX已经存在");
+       // }
+    };
+    @Override
+    public void updateCheck(BpmModel bpmModel){};
+    @Override
+    public void deleteCheck(BpmModel bpmModel){};
+
+    @Override
+    /**
+     * 多条件分页获取(流程定义)
+     * @param bpmModel
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    public Page<BpmModel> findByCondition(BpmModel bpmModel, SearchTimeVo searchVo, Pageable pageable) {
+        return getRepository().findAll(new Specification<BpmModel>() {
+            @Nullable
+            @Override
+            public Predicate toPredicate(Root<BpmModel> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+
+                Path<Date> createTimeField=root.get("createTime");
+
+                List<Predicate> list = new ArrayList<Predicate>();
+
+                //创建时间
+                if(searchVo.getStartDate()!=null){
+                    Date start = DateUtil.date(searchVo.getStartDate());
+                    list.add(cb.greaterThanOrEqualTo(createTimeField, start));
+                }
+                if(searchVo.getEndDate()!=null){
+                    Date end = DateUtil.date(searchVo.getEndDate());
+                    list.add(cb.lessThanOrEqualTo(createTimeField, end));
+                }
+
+                Predicate[] arr = new Predicate[list.size()];
+                cq.where(list.toArray(arr));
+                return null;
+            }
+        }, pageable);
+    }
+}
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | package com.wf.modules.flowable.controller;
+
+import com.wf.base.BaseController;
+import com.wf.bean.vo.PageVo;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.common.dto.BaseDTO;
+import com.wf.common.utils.ResultUtil;
+import com.wf.modules.flowable.entity.BpmModel;
+import com.wf.modules.flowable.service.BpmModelService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
+
+
+/**
+ * 流程定义Controller层
+ * @author meibo
+ */
+@Slf4j
+@RestController
+@Api(description = "流程定义管理接口")
+@RequestMapping("/bpmModel")
+@Transactional
+public class BpmModelController extends BaseController<BpmModel, String>{
+
+    @Autowired
+    private BpmModelService bpmModelService;
+
+    @Override
+    public BpmModelService getService() {
+        return bpmModelService;
+    }
+
+    @RequestMapping(value = "/getByPage",method = RequestMethod.GET)
+    @ResponseBody
+    @ApiOperation(value = "分页获取")
+    public BaseDTO<Page<BpmModel>> getByPage(
+            @ModelAttribute BpmModel bpmModel,
+            @ModelAttribute SearchTimeVo searchVo,
+            @ModelAttribute PageVo page){
+
+        Page<BpmModel> data = getService().findByCondition(bpmModel,searchVo,initPage(page));
+        return new ResultUtil<Page<BpmModel>>().setData(data);
+    }
+}
+
+[2019-02-27 15:48:05]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！

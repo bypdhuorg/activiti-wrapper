@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 指定工作空间，要与接口名相同-->
+<mapper namespace="com.wf.modules.flowable.dao.mapper.TableOperationMapper">
+    <!-- 抽取出来的公共部分 -->
+    <sql id="commonSql">
+            `${fields.fieldName}` ${fields.fieldType}
+    </sql>
+
+    <!-- 验证表是否存在 -->
+    <select id = "findTableCountByTableName" parameterType="java.lang.String" resultType="int">
+      select count(1)
+      from information_schema.TABLES t
+      where table_name =#{tableName}
+    </select>
+
+    <!-- 根据表名查询表的结构 -->
+    <select id="findTableEnsembleByTableName"    resultType="java.lang.String" parameterType="String">
+		select column_name  from information_schema.columns where table_name = #{tableName} and table_schema = (select database())
+	</select>
+
+    <!-- 创建表 -->
+    <select id="createTable" parameterType="com.wf.common.table.TableSql">
+        create table `${name}`(
+        <foreach collection="columnSqls" item="fields" separator=",">
+            <include refid="commonSql"></include>
+        </foreach>
+        <if test="primaryKey">
+            ,PRIMARY KEY (`${primaryKey}`)
+        </if>
+        )
+        <if test="comment">
+            COMMENT='${comment}'
+        </if>
+        ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin
+        ;
+    </select>
+
+
+    <!-- 增加字段 -->
+    <select id="addTableField" parameterType="com.wf.common.table.TableSql">
+        <foreach collection="columnSqls" index="key" item="fields" separator=";" close=";">
+            alter table `${name}` add
+            <include refid="commonSql"></include>
+        </foreach>
+    </select>
+
+
+    <!-- 删除表是否存在 -->
+    <select id="dorpTableByName" parameterType="String">
+        DROP TABLE IF EXISTS `${tableName}`;
+    </select>
+</mapper>

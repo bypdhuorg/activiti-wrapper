@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "name": "flowable.modeler.app",
+      "type": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties",
+      "sourceType": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "flowable.modeler.app.data-source-prefix",
+      "type": "java.lang.String",
+      "description": "The prefix for the database tables.",
+      "sourceType": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "flowable.modeler.app.decision-table-migration-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the logic to migrate old decision table models to the new model version",
+      "sourceType": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "flowable.modeler.app.deployment-api-url",
+      "type": "java.lang.String",
+      "description": "The root URI to the REST services of the Flowable engine, used by the Flowable Modeler application to deploy the application definition BAR file to the engine. Default url for the Flowable Task application is http:\/\/localhost:8080\/flowable-task\/app-api",
+      "sourceType": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties",
+      "defaultValue": "http:\/\/localhost:8080\/flowable-task\/app-api"
+    },
+    {
+      "name": "flowable.modeler.app.rest-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enables the REST API (this is not the REST api used by the UI, but an api that's available over basic auth authentication).",
+      "sourceType": "org.flowable.ui.modeler.properties.FlowableModelerAppProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

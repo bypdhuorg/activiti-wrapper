@@ -1,0 +1,878 @@
+[2019-03-06 09:28:59]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-buildDefaultMergedContextConfiguration(308)] | Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest], using SpringBootContextLoader
+[2019-03-06 09:28:59]-[main]-[INFO]-[org.springframework.test.context.support.AbstractContextLoader-generateDefaultLocations(264)] | Could not detect default resource locations for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-03-06 09:28:59]-[main]-[INFO]-[org.springframework.test.context.support.AnnotationConfigContextLoaderUtils-detectDefaultConfigurationClasses(83)] | Could not detect default configuration classes for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: BpmInstanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-03-06 09:29:01]-[main]-[INFO]-[org.springframework.boot.test.context.SpringBootTestContextBootstrapper-getOrFindConfigurationClasses(247)] | Found @SpringBootConfiguration com.wf.AppApplication for test class com.wf.modules.flowable.controller.BpmInstanceControllerTest
+[2019-03-06 09:29:02]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getDefaultTestExecutionListenerClassNames(248)] | Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-03-06 09:29:02]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getTestExecutionListeners(177)] | Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a225dd7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61eaec38, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@125290e5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6fa34d52, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57576994, org.springframework.test.context.transaction.TransactionalTestExecutionListener@616ac46a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@67b9b51a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1205bd62, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ef27d7f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@490caf5f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6337c201, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c669da8]
+[2019-03-06 09:29:05]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarting(50)] | Starting BpmInstanceControllerTest on VEPAA9BERA1XWR7 with PID 4528 (started by Administrator in E:\github\activiti_test\activiti-wrapper)
+[2019-03-06 09:29:05]-[main]-[INFO]-[org.springframework.boot.SpringApplication-logStartupProfileInfo(679)] | The following profiles are active: dev
+[2019-03-06 09:29:16]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(126)] | Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-06 09:29:16]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(182)] | Finished Spring Data repository scanning in 219ms. Found 5 repository interfaces.
+[2019-03-06 09:29:17]-[main]-[INFO]-[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-postProcessAfterInitialization(330)] | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e572a982] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-06 09:29:19]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(110)] | HikariPool-1 - Starting...
+[2019-03-06 09:29:20]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(123)] | HikariPool-1 - Start completed.
+[2019-03-06 09:29:20]-[main]-[INFO]-[org.hibernate.jpa.internal.util.LogHelper-logPersistenceUnitInformation(31)] | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-03-06 09:29:21]-[main]-[INFO]-[org.hibernate.Version-logVersion(46)] | HHH000412: Hibernate Core {5.3.7.Final}
+[2019-03-06 09:29:22]-[main]-[INFO]-[org.hibernate.cfg.Environment-<clinit>(213)] | HHH000206: hibernate.properties not found
+[2019-03-06 09:29:23]-[main]-[INFO]-[org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>(49)] | HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-03-06 09:29:24]-[main]-[INFO]-[org.hibernate.dialect.Dialect-<init>(157)] | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-03-06 09:29:29]-[main]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-buildNativeEntityManagerFactory(415)] | Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 09:29:31]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 09:29:31]-[main]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-initialize(171)] | Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-06 09:29:32]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 09:29:32]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(834)] | Found 6 Engine Configurators in total:
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 09:29:33]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 09:29:38]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.engine.impl.ProcessEngineImpl-<init>(84)] | ProcessEngine default created
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-start(114)] | Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 09:29:40]-[Thread-7]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(56)] | starting to reset expired jobs
+[2019-03-06 09:29:40]-[Thread-6]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(50)] | starting to acquire async jobs due
+[2019-03-06 09:29:40]-[Thread-5]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(52)] | starting to acquire async jobs due
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd-execute(43)] | Total of v5 deployments found: 0
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.idm.engine.impl.IdmEngineImpl-<init>(51)] | IdmEngine default created
+[2019-03-06 09:29:40]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 09:29:43]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:43]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:43]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 09:29:43]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 09:29:45]-[main]-[INFO]-[org.flowable.dmn.engine.impl.DmnEngineImpl-<init>(54)] | DmnEngine default created
+[2019-03-06 09:29:45]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 09:29:45]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 09:29:46]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 09:29:46]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 09:29:46]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 09:29:46]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.form.engine.impl.FormEngineImpl-<init>(51)] | FormEngine default created
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.content.engine.ContentEngineConfiguration-initContentStorage(193)] | Content file system root : C:\Users\Administrator\content
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.content.engine.impl.ContentEngineImpl-<init>(48)] | ContentEngine default created
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[org.flowable.cmmn.engine.impl.CmmnEngineImpl-<init>(64)] | CmmnEngine default created
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 09:29:47]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 09:29:48]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 09:29:48]-[main]-[INFO]-[org.flowable.app.engine.impl.AppEngineImpl-<init>(48)] | AppEngine default created
+[2019-03-06 09:29:51]-[main]-[WARN]-[org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration-openEntityManagerInViewInterceptor(234)] | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-06 09:29:52]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarted(59)] | Started BpmInstanceControllerTest in 49.833 seconds (JVM running for 59.832)
+[2019-03-06 09:29:52]-[main]-[INFO]-[org.springframework.mock.web.MockServletContext-log(444)] | Initializing Spring TestDispatcherServlet ''
+[2019-03-06 09:29:52]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(524)] | Initializing Servlet ''
+[2019-03-06 09:29:52]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(546)] | Completed initialization in 46 ms
+[2019-03-06 09:29:54]-[main]-[INFO]-[org.hibernate.hql.internal.QueryTranslatorFactoryInitiator-initiateService(47)] | HHH000397: Using ASTQueryTranslatorFactory
+[2019-03-06 09:29:55]-[Thread-8]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-shutdown(162)] | Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 09:29:55]-[flowable-acquire-async-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(79)] | stopped async job due acquisition
+[2019-03-06 09:29:55]-[flowable-reset-expired-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(83)] | stopped resetting expired jobs
+[2019-03-06 09:29:55]-[flowable-acquire-timer-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(116)] | stopped async job due acquisition
+[2019-03-06 09:29:55]-[Thread-8]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-shutdown(208)] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-06 09:29:55]-[Thread-8]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-destroy(597)] | Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 09:29:55]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(350)] | HikariPool-1 - Shutdown initiated...
+[2019-03-06 09:29:55]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(352)] | HikariPool-1 - Shutdown completed.
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(139)] | package com.wf.modules.flowable.entity;
+
+import com.wf.base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import lombok.Data;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * 流程任务 业务数据
+ * @author meibo
+ */
+@Data
+@Entity
+@Table(name = "wf_bpm_task")
+@ApiModel(value = "流程任务")
+public class BpmTask extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+}
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(157)] | package com.wf.modules.flowable.dao;
+
+import com.wf.base.BaseDao;
+import com.wf.modules.flowable.entity.BpmTask;
+
+import java.util.List;
+
+/**
+ * 流程任务数据处理层
+ * @author meibo
+ */
+public interface BpmTaskDao extends BaseDao<BpmTask,String> {
+
+}
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(172)] | package com.wf.modules.flowable.service;
+
+import com.wf.base.BaseService;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.entity.BpmTask;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+
+/**
+ * 流程任务接口
+ * @author meibo
+ */
+public interface BpmTaskService extends BaseService<BpmTask,String> {
+
+    /**
+     * 多条件分页获取(流程任务)
+     * @param bpmTask
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    Page<BpmTask> findByCondition(BpmTask bpmTask, SearchTimeVo searchVo, Pageable pageable);
+}
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(187)] | package com.wf.modules.flowable.service.impl;
+
+import cn.hutool.core.date.DateUtil;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.modules.flowable.dao.BpmTaskDao;
+import com.wf.modules.flowable.entity.BpmTask;
+import com.wf.modules.flowable.service.BpmTaskService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * 流程任务接口实现
+ * @author meibo
+ */
+@Slf4j
+@Service
+@Transactional
+public class BpmTaskServiceImpl implements BpmTaskService {
+
+    @Autowired
+    private BpmTaskDao bpmTaskDao;
+
+    @Override
+    public BpmTaskDao getRepository() {
+        return bpmTaskDao;
+    }
+
+    @Override
+    public void saveCheck(BpmTask bpmTask){
+       // if(getRepository().findByUserId(bpmTask.getUserId()) !=null){
+       //     throw new UserClientException("XXX已经存在");
+       // }
+    };
+    @Override
+    public void updateCheck(BpmTask bpmTask){};
+
+    @Override
+    /**
+     * 多条件分页获取(流程任务)
+     * @param bpmTask
+     * @param searchVo
+     * @param pageable
+     * @return
+     */
+    public Page<BpmTask> findByCondition(BpmTask bpmTask, SearchTimeVo searchVo, Pageable pageable) {
+        return getRepository().findAll(new Specification<BpmTask>() {
+            @Nullable
+            @Override
+            public Predicate toPredicate(Root<BpmTask> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+
+                Path<Date> createTimeField=root.get("createTime");
+
+                List<Predicate> list = new ArrayList<Predicate>();
+
+                //创建时间
+                if(searchVo.getStartDate()!=null){
+                    Date start = DateUtil.date(searchVo.getStartDate());
+                    list.add(cb.greaterThanOrEqualTo(createTimeField, start));
+                }
+                if(searchVo.getEndDate()!=null){
+                    Date end = DateUtil.date(searchVo.getEndDate());
+                    list.add(cb.lessThanOrEqualTo(createTimeField, end));
+                }
+
+                Predicate[] arr = new Predicate[list.size()];
+                cq.where(list.toArray(arr));
+                return null;
+            }
+        }, pageable);
+    }
+}
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(202)] | package com.wf.modules.flowable.controller;
+
+import com.wf.base.BaseController;
+import com.wf.bean.vo.PageVo;
+import com.wf.bean.vo.SearchTimeVo;
+import com.wf.common.dto.BaseDTO;
+import com.wf.common.utils.ResultUtil;
+import com.wf.modules.flowable.entity.BpmTask;
+import com.wf.modules.flowable.service.BpmTaskService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
+
+
+/**
+ * 流程任务Controller层
+ * @author meibo
+ */
+@Slf4j
+@RestController
+@Api(description = "流程任务管理接口")
+@RequestMapping("/bpmTask")
+@Transactional
+public class BpmTaskController extends BaseController<BpmTask, String>{
+
+    @Autowired
+    private BpmTaskService bpmTaskService;
+
+    @Override
+    public BpmTaskService getService() {
+        return bpmTaskService;
+    }
+
+    @RequestMapping(value = "/getByPage",method = RequestMethod.GET)
+    @ResponseBody
+    @ApiOperation(value = "分页获取")
+    public BaseDTO<Page<BpmTask>> getByPage(
+            @ModelAttribute BpmTask bpmTask,
+            @ModelAttribute SearchTimeVo searchVo,
+            @ModelAttribute PageVo page){
+
+        Page<BpmTask> data = getService().findByCondition(bpmTask,searchVo,initPage(page));
+        return new ResultUtil<Page<BpmTask>>().setData(data);
+    }
+}
+
+[2019-03-06 15:35:02]-[main]-[INFO]-[generator.XbootGenerator-generateCode(228)] | 生成代码成功！
+[2019-03-06 16:06:30]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-buildDefaultMergedContextConfiguration(308)] | Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest], using SpringBootContextLoader
+[2019-03-06 16:06:30]-[main]-[INFO]-[org.springframework.test.context.support.AbstractContextLoader-generateDefaultLocations(264)] | Could not detect default resource locations for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-03-06 16:06:30]-[main]-[INFO]-[org.springframework.test.context.support.AnnotationConfigContextLoaderUtils-detectDefaultConfigurationClasses(83)] | Could not detect default configuration classes for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: BpmInstanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-03-06 16:06:31]-[main]-[INFO]-[org.springframework.boot.test.context.SpringBootTestContextBootstrapper-getOrFindConfigurationClasses(247)] | Found @SpringBootConfiguration com.wf.AppApplication for test class com.wf.modules.flowable.controller.BpmInstanceControllerTest
+[2019-03-06 16:06:32]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getDefaultTestExecutionListenerClassNames(248)] | Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-03-06 16:06:32]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getTestExecutionListeners(177)] | Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2049a9c1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ef6d34c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46271dd6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11bb571c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c51f34b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5495333e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a225dd7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61eaec38, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@125290e5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6fa34d52, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57576994, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@616ac46a]
+[2019-03-06 16:06:35]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarting(50)] | Starting BpmInstanceControllerTest on VEPAA9BERA1XWR7 with PID 11244 (started by Administrator in E:\github\activiti_test\activiti-wrapper)
+[2019-03-06 16:06:35]-[main]-[INFO]-[org.springframework.boot.SpringApplication-logStartupProfileInfo(679)] | The following profiles are active: dev
+[2019-03-06 16:06:44]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(126)] | Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-06 16:06:44]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(182)] | Finished Spring Data repository scanning in 483ms. Found 6 repository interfaces.
+[2019-03-06 16:06:48]-[main]-[INFO]-[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-postProcessAfterInitialization(330)] | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$366f14a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-06 16:06:48]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(110)] | HikariPool-1 - Starting...
+[2019-03-06 16:06:49]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(123)] | HikariPool-1 - Start completed.
+[2019-03-06 16:06:49]-[main]-[INFO]-[org.hibernate.jpa.internal.util.LogHelper-logPersistenceUnitInformation(31)] | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-03-06 16:06:49]-[main]-[INFO]-[org.hibernate.Version-logVersion(46)] | HHH000412: Hibernate Core {5.3.7.Final}
+[2019-03-06 16:06:49]-[main]-[INFO]-[org.hibernate.cfg.Environment-<clinit>(213)] | HHH000206: hibernate.properties not found
+[2019-03-06 16:06:50]-[main]-[INFO]-[org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>(49)] | HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-03-06 16:06:51]-[main]-[INFO]-[org.hibernate.dialect.Dialect-<init>(157)] | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-03-06 16:06:54]-[main]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-buildNativeEntityManagerFactory(415)] | Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 16:06:56]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 16:06:56]-[main]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-initialize(171)] | Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-06 16:06:57]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 16:06:57]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 16:06:57]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(834)] | Found 6 Engine Configurators in total:
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 16:06:58]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 16:07:01]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.engine.impl.ProcessEngineImpl-<init>(84)] | ProcessEngine default created
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-start(114)] | Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 16:07:02]-[Thread-5]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(52)] | starting to acquire async jobs due
+[2019-03-06 16:07:02]-[Thread-6]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(50)] | starting to acquire async jobs due
+[2019-03-06 16:07:02]-[Thread-7]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(56)] | starting to reset expired jobs
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd-execute(43)] | Total of v5 deployments found: 0
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.idm.engine.impl.IdmEngineImpl-<init>(51)] | IdmEngine default created
+[2019-03-06 16:07:02]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 16:07:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 16:07:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.dmn.engine.impl.DmnEngineImpl-<init>(54)] | DmnEngine default created
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.form.engine.impl.FormEngineImpl-<init>(51)] | FormEngine default created
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.content.engine.ContentEngineConfiguration-initContentStorage(193)] | Content file system root : C:\Users\Administrator\content
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 16:07:06]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.content.engine.impl.ContentEngineImpl-<init>(48)] | ContentEngine default created
+[2019-03-06 16:07:06]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 16:07:07]-[main]-[INFO]-[org.flowable.cmmn.engine.impl.CmmnEngineImpl-<init>(64)] | CmmnEngine default created
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 16:07:07]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 16:07:07]-[main]-[INFO]-[org.flowable.app.engine.impl.AppEngineImpl-<init>(48)] | AppEngine default created
+[2019-03-06 16:07:10]-[main]-[WARN]-[org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration-openEntityManagerInViewInterceptor(234)] | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-06 16:07:11]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarted(59)] | Started BpmInstanceControllerTest in 39.063 seconds (JVM running for 44.094)
+[2019-03-06 16:07:11]-[main]-[INFO]-[org.springframework.mock.web.MockServletContext-log(444)] | Initializing Spring TestDispatcherServlet ''
+[2019-03-06 16:07:11]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(524)] | Initializing Servlet ''
+[2019-03-06 16:07:12]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(546)] | Completed initialization in 54 ms
+[2019-03-06 16:07:12]-[main]-[INFO]-[org.hibernate.hql.internal.QueryTranslatorFactoryInitiator-initiateService(47)] | HHH000397: Using ASTQueryTranslatorFactory
+[2019-03-06 16:07:13]-[main]-[WARN]-[org.flowable.common.engine.impl.event.FlowableEventSupport-dispatchNormalEventListener(122)] | Exception while executing event-listener, which was ignored
+java.lang.NullPointerException: null
+	at com.wf.modules.flowable.engine.events.WfTaskCreatedEventHandler.run(WfTaskCreatedEventHandler.java:40) ~[classes/:?]
+	at com.wf.modules.flowable.engine.WfGlobalEventListener.onEvent(WfGlobalEventListener.java:25) ~[classes/:?]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchNormalEventListener(FlowableEventSupport.java:115) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchEvent(FlowableEventSupport.java:109) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchEvent(FlowableEventSupport.java:92) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventDispatcherImpl.dispatchEvent(FlowableEventDispatcherImpl.java:65) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.bpmn.behavior.UserTaskActivityBehavior.execute(UserTaskActivityBehavior.java:231) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:264) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:158) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:113) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughSequenceFlow(ContinueProcessOperation.java:311) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:79) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:71) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:49) ~[flowable-spring-common-6.4.0.jar:6.4.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:46) ~[flowable-spring-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.RuntimeServiceImpl.startProcessInstanceById(RuntimeServiceImpl.java:157) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at com.wf.modules.flowable.service.flowable.WfInstanceService.startProcessInstance(WfInstanceService.java:35) ~[classes/:?]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl.saveAndStart(BpmInstanceServiceImpl.java:140) ~[classes/:?]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl$$FastClassBySpringCGLIB$$367f1e29.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl$$EnhancerBySpringCGLIB$$25442ecf.saveAndStart(<generated>) ~[classes/:?]
+	at com.wf.modules.flowable.controller.BpmInstanceController.start(BpmInstanceController.java:58) ~[classes/:?]
+	at com.wf.modules.flowable.controller.BpmInstanceController$$FastClassBySpringCGLIB$$111c8a4b.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.controller.BpmInstanceController$$EnhancerBySpringCGLIB$$f7881875.start(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.controller.BpmInstanceControllerTest.start(BpmInstanceControllerTest.java:129) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+[2019-03-06 16:07:14]-[Thread-8]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-shutdown(162)] | Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 16:07:14]-[flowable-acquire-timer-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(116)] | stopped async job due acquisition
+[2019-03-06 16:07:14]-[flowable-acquire-async-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(79)] | stopped async job due acquisition
+[2019-03-06 16:07:14]-[flowable-reset-expired-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(83)] | stopped resetting expired jobs
+[2019-03-06 16:07:14]-[Thread-8]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-shutdown(208)] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-06 16:07:14]-[Thread-8]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-destroy(597)] | Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 16:07:14]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(350)] | HikariPool-1 - Shutdown initiated...
+[2019-03-06 16:07:14]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(352)] | HikariPool-1 - Shutdown completed.
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-buildDefaultMergedContextConfiguration(308)] | Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest], using SpringBootContextLoader
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.test.context.support.AbstractContextLoader-generateDefaultLocations(264)] | Could not detect default resource locations for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.test.context.support.AnnotationConfigContextLoaderUtils-detectDefaultConfigurationClasses(83)] | Could not detect default configuration classes for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: BpmInstanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.boot.test.context.SpringBootTestContextBootstrapper-getOrFindConfigurationClasses(247)] | Found @SpringBootConfiguration com.wf.AppApplication for test class com.wf.modules.flowable.controller.BpmInstanceControllerTest
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getDefaultTestExecutionListenerClassNames(248)] | Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-03-06 17:31:53]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getTestExecutionListeners(177)] | Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f31c0c6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b93aad, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a9419d7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f3c6ac4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e8ab815, org.springframework.test.context.transaction.TransactionalTestExecutionListener@67af833b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@d1f74b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@41394595, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3a0807b7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21a5fd96, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5769e7ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c77053b]
+[2019-03-06 17:31:55]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarting(50)] | Starting BpmInstanceControllerTest on VEPAA9BERA1XWR7 with PID 11628 (started by Administrator in E:\github\activiti_test\activiti-wrapper)
+[2019-03-06 17:31:55]-[main]-[INFO]-[org.springframework.boot.SpringApplication-logStartupProfileInfo(679)] | The following profiles are active: dev
+[2019-03-06 17:31:57]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(126)] | Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-06 17:31:57]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(182)] | Finished Spring Data repository scanning in 341ms. Found 6 repository interfaces.
+[2019-03-06 17:32:00]-[main]-[INFO]-[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-postProcessAfterInitialization(330)] | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$295f77fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-06 17:32:01]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(110)] | HikariPool-1 - Starting...
+[2019-03-06 17:32:02]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(123)] | HikariPool-1 - Start completed.
+[2019-03-06 17:32:02]-[main]-[INFO]-[org.hibernate.jpa.internal.util.LogHelper-logPersistenceUnitInformation(31)] | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-03-06 17:32:02]-[main]-[INFO]-[org.hibernate.Version-logVersion(46)] | HHH000412: Hibernate Core {5.3.7.Final}
+[2019-03-06 17:32:02]-[main]-[INFO]-[org.hibernate.cfg.Environment-<clinit>(213)] | HHH000206: hibernate.properties not found
+[2019-03-06 17:32:03]-[main]-[INFO]-[org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>(49)] | HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-03-06 17:32:03]-[main]-[INFO]-[org.hibernate.dialect.Dialect-<init>(157)] | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-03-06 17:32:06]-[main]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-buildNativeEntityManagerFactory(415)] | Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 17:32:08]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:32:08]-[main]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-initialize(171)] | Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-06 17:32:09]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:32:09]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(834)] | Found 6 Engine Configurators in total:
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:32:10]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:32:15]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.engine.impl.ProcessEngineImpl-<init>(84)] | ProcessEngine default created
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-start(114)] | Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 17:32:17]-[Thread-5]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(52)] | starting to acquire async jobs due
+[2019-03-06 17:32:17]-[Thread-6]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(50)] | starting to acquire async jobs due
+[2019-03-06 17:32:17]-[Thread-7]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(56)] | starting to reset expired jobs
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd-execute(43)] | Total of v5 deployments found: 0
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.idm.engine.impl.IdmEngineImpl-<init>(51)] | IdmEngine default created
+[2019-03-06 17:32:17]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:32:19]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:19]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:19]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:32:19]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:32:22]-[main]-[INFO]-[org.flowable.dmn.engine.impl.DmnEngineImpl-<init>(54)] | DmnEngine default created
+[2019-03-06 17:32:22]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:32:22]-[main]-[INFO]-[org.flowable.form.engine.impl.FormEngineImpl-<init>(51)] | FormEngine default created
+[2019-03-06 17:32:22]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:32:22]-[main]-[INFO]-[org.flowable.content.engine.ContentEngineConfiguration-initContentStorage(193)] | Content file system root : C:\Users\Administrator\content
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 17:32:22]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:32:23]-[main]-[INFO]-[org.flowable.content.engine.impl.ContentEngineImpl-<init>(48)] | ContentEngine default created
+[2019-03-06 17:32:23]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:32:23]-[main]-[INFO]-[org.flowable.cmmn.engine.impl.CmmnEngineImpl-<init>(64)] | CmmnEngine default created
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:32:23]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:32:23]-[main]-[INFO]-[org.flowable.app.engine.impl.AppEngineImpl-<init>(48)] | AppEngine default created
+[2019-03-06 17:32:28]-[main]-[WARN]-[org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration-openEntityManagerInViewInterceptor(234)] | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-06 17:32:30]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarted(59)] | Started BpmInstanceControllerTest in 36.951 seconds (JVM running for 42.925)
+[2019-03-06 17:32:31]-[main]-[INFO]-[org.springframework.mock.web.MockServletContext-log(444)] | Initializing Spring TestDispatcherServlet ''
+[2019-03-06 17:32:31]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(524)] | Initializing Servlet ''
+[2019-03-06 17:32:31]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(546)] | Completed initialization in 161 ms
+[2019-03-06 17:33:05]-[main]-[INFO]-[org.hibernate.hql.internal.QueryTranslatorFactoryInitiator-initiateService(47)] | HHH000397: Using ASTQueryTranslatorFactory
+[2019-03-06 17:35:09]-[HikariPool-1 housekeeper]-[WARN]-[com.zaxxer.hikari.pool.HikariPool$HouseKeeper-run(766)] | HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s159ms406µs118ns).
+[2019-03-06 17:35:18]-[main]-[WARN]-[org.flowable.common.engine.impl.event.FlowableEventSupport-dispatchNormalEventListener(122)] | Exception while executing event-listener, which was ignored
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'bpmTaskService' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:772) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1221) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:294) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.common.utils.ApplicationContextProvider.getBean(ApplicationContextProvider.java:40) ~[classes/:?]
+	at com.wf.modules.flowable.engine.events.WfTaskCreatedEventHandler.run(WfTaskCreatedEventHandler.java:20) ~[classes/:?]
+	at com.wf.modules.flowable.engine.WfGlobalEventListener.onEvent(WfGlobalEventListener.java:25) ~[classes/:?]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchNormalEventListener(FlowableEventSupport.java:115) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchEvent(FlowableEventSupport.java:109) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventSupport.dispatchEvent(FlowableEventSupport.java:92) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.event.FlowableEventDispatcherImpl.dispatchEvent(FlowableEventDispatcherImpl.java:65) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.bpmn.behavior.UserTaskActivityBehavior.execute(UserTaskActivityBehavior.java:231) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:264) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:158) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:113) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughSequenceFlow(ContinueProcessOperation.java:311) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:79) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:71) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:49) ~[flowable-spring-common-6.4.0.jar:6.4.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:46) ~[flowable-spring-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51) ~[flowable-engine-common-6.4.0.jar:6.4.0]
+	at org.flowable.engine.impl.RuntimeServiceImpl.startProcessInstanceById(RuntimeServiceImpl.java:157) ~[flowable-engine-6.4.0.jar:6.4.0]
+	at com.wf.modules.flowable.service.flowable.WfInstanceService.startProcessInstance(WfInstanceService.java:35) ~[classes/:?]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl.saveAndStart(BpmInstanceServiceImpl.java:140) ~[classes/:?]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl$$FastClassBySpringCGLIB$$367f1e29.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.service.impl.BpmInstanceServiceImpl$$EnhancerBySpringCGLIB$$626bb8ba.saveAndStart(<generated>) ~[classes/:?]
+	at com.wf.modules.flowable.controller.BpmInstanceController.start(BpmInstanceController.java:58) ~[classes/:?]
+	at com.wf.modules.flowable.controller.BpmInstanceController$$FastClassBySpringCGLIB$$111c8a4b.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) [spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) [spring-tx-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) [spring-aop-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.controller.BpmInstanceController$$EnhancerBySpringCGLIB$$34afa260.start(<generated>) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) [spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:71) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:166) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:133) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:182) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.wf.modules.flowable.controller.BpmInstanceControllerTest.start(BpmInstanceControllerTest.java:129) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_181]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+[2019-03-06 17:35:20]-[Thread-8]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-shutdown(162)] | Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 17:35:20]-[flowable-reset-expired-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(83)] | stopped resetting expired jobs
+[2019-03-06 17:35:20]-[flowable-acquire-async-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(79)] | stopped async job due acquisition
+[2019-03-06 17:35:20]-[flowable-acquire-timer-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(116)] | stopped async job due acquisition
+[2019-03-06 17:35:20]-[Thread-8]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-shutdown(208)] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-06 17:35:20]-[Thread-8]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-destroy(597)] | Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 17:35:20]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(350)] | HikariPool-1 - Shutdown initiated...
+[2019-03-06 17:35:20]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(352)] | HikariPool-1 - Shutdown completed.
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-buildDefaultMergedContextConfiguration(308)] | Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest], using SpringBootContextLoader
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.test.context.support.AbstractContextLoader-generateDefaultLocations(264)] | Could not detect default resource locations for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.test.context.support.AnnotationConfigContextLoaderUtils-detectDefaultConfigurationClasses(83)] | Could not detect default configuration classes for test class [com.wf.modules.flowable.controller.BpmInstanceControllerTest]: BpmInstanceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.boot.test.context.SpringBootTestContextBootstrapper-getOrFindConfigurationClasses(247)] | Found @SpringBootConfiguration com.wf.AppApplication for test class com.wf.modules.flowable.controller.BpmInstanceControllerTest
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getDefaultTestExecutionListenerClassNames(248)] | Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-03-06 17:37:43]-[main]-[INFO]-[org.springframework.test.context.support.AbstractTestContextBootstrapper-getTestExecutionListeners(177)] | Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2049a9c1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ef6d34c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46271dd6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11bb571c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c51f34b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5495333e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a225dd7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@61eaec38, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@125290e5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6fa34d52, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@57576994, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@616ac46a]
+[2019-03-06 17:37:46]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarting(50)] | Starting BpmInstanceControllerTest on VEPAA9BERA1XWR7 with PID 13304 (started by Administrator in E:\github\activiti_test\activiti-wrapper)
+[2019-03-06 17:37:46]-[main]-[INFO]-[org.springframework.boot.SpringApplication-logStartupProfileInfo(679)] | The following profiles are active: dev
+[2019-03-06 17:37:49]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(126)] | Bootstrapping Spring Data repositories in DEFAULT mode.
+[2019-03-06 17:37:49]-[main]-[INFO]-[org.springframework.data.repository.config.RepositoryConfigurationDelegate-registerRepositoriesIn(182)] | Finished Spring Data repository scanning in 150ms. Found 6 repository interfaces.
+[2019-03-06 17:37:50]-[main]-[INFO]-[org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker-postProcessAfterInitialization(330)] | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e06e4f1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-06 17:37:50]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(110)] | HikariPool-1 - Starting...
+[2019-03-06 17:37:51]-[main]-[INFO]-[com.zaxxer.hikari.HikariDataSource-getConnection(123)] | HikariPool-1 - Start completed.
+[2019-03-06 17:37:51]-[main]-[INFO]-[org.hibernate.jpa.internal.util.LogHelper-logPersistenceUnitInformation(31)] | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[2019-03-06 17:37:51]-[main]-[INFO]-[org.hibernate.Version-logVersion(46)] | HHH000412: Hibernate Core {5.3.7.Final}
+[2019-03-06 17:37:51]-[main]-[INFO]-[org.hibernate.cfg.Environment-<clinit>(213)] | HHH000206: hibernate.properties not found
+[2019-03-06 17:37:51]-[main]-[INFO]-[org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>(49)] | HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[2019-03-06 17:37:52]-[main]-[INFO]-[org.hibernate.dialect.Dialect-<init>(157)] | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[2019-03-06 17:37:54]-[main]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-buildNativeEntityManagerFactory(415)] | Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 17:37:55]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:37:55]-[main]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-initialize(171)] | Initializing ExecutorService 'applicationTaskExecutor'
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.spring.boot.AbstractEngineAutoConfiguration-discoverDeploymentResources(94)] | No deployment resources were found for autodeployment
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(834)] | Found 6 Engine Configurators in total:
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-initConfigurators(836)] | class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:37:56]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsBeforeInit(851)] | Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:37:59]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.engine.impl.ProcessEngineImpl-<init>(84)] | ProcessEngine default created
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-start(114)] | Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 17:38:00]-[Thread-6]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(50)] | starting to acquire async jobs due
+[2019-03-06 17:38:00]-[Thread-5]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(52)] | starting to acquire async jobs due
+[2019-03-06 17:38:00]-[Thread-7]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(56)] | starting to reset expired jobs
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd-execute(43)] | Total of v5 deployments found: 0
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.idm.engine.impl.IdmEngineImpl-<init>(51)] | IdmEngine default created
+[2019-03-06 17:38:00]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+[2019-03-06 17:38:02]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:02]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:02]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:38:02]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_DMN_DATABASECHANGELOG
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:38:03]-[main]-[INFO]-[org.flowable.dmn.engine.impl.DmnEngineImpl-<init>(54)] | DmnEngine default created
+[2019-03-06 17:38:03]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:03]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_FO_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.form.engine.impl.FormEngineImpl-<init>(51)] | FormEngine default created
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.content.engine.ContentEngineConfiguration-initContentStorage(193)] | Content file system root : C:\Users\Administrator\content
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CO_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.content.engine.impl.ContentEngineImpl-<init>(48)] | ContentEngine default created
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.common.engine.impl.AbstractEngineConfiguration-configuratorsAfterInit(858)] | Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_CMMN_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.cmmn.engine.impl.CmmnEngineImpl-<init>(64)] | CmmnEngine default created
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT `LOCKED` FROM activiti_test.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully acquired change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT MD5SUM FROM activiti_test.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT COUNT(*) FROM activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Reading from activiti_test.ACT_APP_DATABASECHANGELOG
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | SELECT * FROM activiti_test.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+[2019-03-06 17:38:04]-[main]-[INFO]-[liquibase.logging.core.Slf4jLogger-info(42)] | Successfully released change log lock
+[2019-03-06 17:38:04]-[main]-[INFO]-[org.flowable.app.engine.impl.AppEngineImpl-<init>(48)] | AppEngine default created
+[2019-03-06 17:38:08]-[main]-[WARN]-[org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration-openEntityManagerInViewInterceptor(234)] | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2019-03-06 17:38:09]-[main]-[INFO]-[org.springframework.boot.StartupInfoLogger-logStarted(59)] | Started BpmInstanceControllerTest in 25.273 seconds (JVM running for 28.287)
+[2019-03-06 17:38:10]-[main]-[INFO]-[org.springframework.mock.web.MockServletContext-log(444)] | Initializing Spring TestDispatcherServlet ''
+[2019-03-06 17:38:10]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(524)] | Initializing Servlet ''
+[2019-03-06 17:38:10]-[main]-[INFO]-[org.springframework.web.servlet.FrameworkServlet-initServletBean(546)] | Completed initialization in 56 ms
+[2019-03-06 17:38:11]-[main]-[INFO]-[org.hibernate.hql.internal.QueryTranslatorFactoryInitiator-initiateService(47)] | HHH000397: Using ASTQueryTranslatorFactory
+[2019-03-06 17:38:12]-[Thread-8]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AbstractAsyncExecutor-shutdown(162)] | Shutting down the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor].
+[2019-03-06 17:38:12]-[flowable-reset-expired-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.ResetExpiredJobsRunnable-run(83)] | stopped resetting expired jobs
+[2019-03-06 17:38:12]-[flowable-acquire-timer-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireTimerJobsRunnable-run(116)] | stopped async job due acquisition
+[2019-03-06 17:38:12]-[flowable-acquire-async-jobs]-[INFO]-[org.flowable.job.service.impl.asyncexecutor.AcquireAsyncJobsDueRunnable-run(79)] | stopped async job due acquisition
+[2019-03-06 17:38:12]-[Thread-8]-[INFO]-[org.springframework.scheduling.concurrent.ExecutorConfigurationSupport-shutdown(208)] | Shutting down ExecutorService 'applicationTaskExecutor'
+[2019-03-06 17:38:12]-[Thread-8]-[INFO]-[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean-destroy(597)] | Closing JPA EntityManagerFactory for persistence unit 'default'
+[2019-03-06 17:38:12]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(350)] | HikariPool-1 - Shutdown initiated...
+[2019-03-06 17:38:12]-[Thread-8]-[INFO]-[com.zaxxer.hikari.HikariDataSource-close(352)] | HikariPool-1 - Shutdown completed.
